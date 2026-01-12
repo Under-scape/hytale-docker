@@ -1,6 +1,11 @@
 # hytale-docker
 Docker configuration for hytale.
 
+# Install
+```
+git clone https://github.com/Under-scape/hytale-docker && cd hytale-docker
+```
+
 ## Create your Hytale server with Docker
 ### 1. Build Hytale Image (Once)
 ```
