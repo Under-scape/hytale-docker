@@ -1,9 +1,10 @@
 # hytale-docker
 Docker configuration for hytale.
+⚠️ Please note that this was created before Hytale was released and may contain bugs. ⚠️
 
 # Install
 ```
-git clone https://github.com/Under-scape/hytale-docker && cd hytale-docker
+git clone https://github.com/Under-scape/hytale-docker && cd hytale-docker 
 ```
 
 ## Create your Hytale server with Docker
