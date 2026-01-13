@@ -27,4 +27,4 @@ cd Server/
 
 echo "Starting..."
 java --version
-java -jar HytaleServer.jar --assets ../assets
+java -jar HytaleServer.jar --assets ../Assets
