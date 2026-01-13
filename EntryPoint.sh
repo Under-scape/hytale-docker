@@ -15,12 +15,11 @@ fi
 echo "Checking for updates..."
 ./hytale-downloader-linux-amd64 -check-update
 
-echo "Download latest release..."
-./hytale-downloader-linux-amd64 -download-path ./assets
-
 if [ -d "./Server" ]; then
     echo "Server already Installed !"
 else 
+    echo "Download latest release..."
+    ./hytale-downloader-linux-amd64 -download-path ./assets
     unzip assets.zip
 fi
 
