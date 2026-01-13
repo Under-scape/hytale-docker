@@ -19,12 +19,12 @@ if [ -d "./Server" ]; then
     echo "Server already Installed !"
 else 
     echo "Download latest release..."
-    ./hytale-downloader-linux-amd64 -download-path ./assets
-    unzip assets.zip
+    ./hytale-downloader-linux-amd64 -download-path ./server.zip
+    unzip server.zip
 fi
 
 cd Server/
 
 echo "Starting..."
 java --version
-java -jar HytaleServer.jar --assets ../Assets
+java -jar HytaleServer.jar --assets ../Assets.zip
