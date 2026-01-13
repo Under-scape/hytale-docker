@@ -18,6 +18,14 @@ echo "Checking for updates..."
 echo "Download latest release..."
 ./hytale-downloader-linux-amd64 -download-path ./assets
 
+if [ -d "./Server" ]; then
+    echo "Server already Installed !"
+else 
+    unzip assets.zip
+fi
+
+cd Server/
+
 echo "Starting..."
 java --version
 java -jar HytaleServer.jar --assets ./assets
