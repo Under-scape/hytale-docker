@@ -17,6 +17,8 @@ docker buildx build -t hytale .
 ```
 docker run -d -it --name hytale-server -p 25565:25565 --entrypoint ./EntryPoint.sh -v .:/server hytale
 ```
+
+## Manage your hytale server with Docker
 ### 3. View logs (-f = live)
 ```
 docker logs -f hytale-server
@@ -24,6 +26,14 @@ docker logs -f hytale-server
 ### 4. Console 
 ```
 docker attach hytale-server --detach-keys='ctrl-c'
+```
+### 5. Stop
+```
+docker stop hytale-server
+```
+### 6. Start
+```
+docker start hytale-server
 ```
 
 ## Official Doc : 
