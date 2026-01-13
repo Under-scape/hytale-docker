@@ -15,7 +15,7 @@ docker buildx build -t hytale .
 ```
 ### 2. Create containeur (Once)
 ```
-docker run -d -it --name hytale-server -p 5520:5520 --entrypoint ./EntryPoint.sh -v .:/server hytale
+docker run -d -it --name hytale-server -p 5520:5520/udp --entrypoint ./EntryPoint.sh -v .:/server hytale
 ```
 
 ## Manage your hytale server with Docker
